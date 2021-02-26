@@ -5,10 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-{% for movie in movie_list %}
-    {{ movie.title  }} <br />
+    <div>
+        <h3>Watched Films</h3>
+        <ul>
+            {% for movie in movie_list %}
+                <li>{{ movie.title  }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 
-{% endfor %}
-
+    <div>
+        <h3>Famous Actors</h3>
+        <strong>Let's </strong><em>play with </em><small>fonts on our </small><i>graves</i>
+        
+    </div>
 </body>
 </html>
